@@ -16,11 +16,14 @@ f.close()
 duplicates = []
 bst = BinarySearchTree("Skyelar Carroll")
 
+# Insert all names into bst
 for name_1 in names_1:
     bst.insert(name_1)
 
+# Compare current name to name in bst
 for name_2 in names_2:
     if bst.contains(name_2):
+        # Append duplicate name to duplicates list
         duplicates.append(name_2)
 
 end_time = time.time()
